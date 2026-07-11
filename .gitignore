@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+ai_models/
+*.sqlite3
+.pytest_cache/
+.mypy_cache/
+.venv311/
+.venv311/

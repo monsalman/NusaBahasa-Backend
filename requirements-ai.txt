@@ -1,0 +1,15 @@
+# Dependency AI (berat) — bagian Salman. Install setelah requirements.txt:
+#   pip install -r requirements-ai.txt
+# CPU-only. Model diunduh saat pertama kali dipakai ke folder MODELS_DIR.
+
+# Object storage R2 (S3-compatible)
+boto3==1.35.90
+
+# ASR
+faster-whisper==1.1.0
+
+# Scoring (wav2vec2) + TTS (MMS-TTS / VITS)
+torch==2.2.2
+transformers==4.46.3
+
+numpy==1.26.4
