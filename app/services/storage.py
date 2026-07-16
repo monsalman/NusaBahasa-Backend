@@ -59,6 +59,10 @@ def get_object_bytes(object_key: str) -> bytes:
     return obj["Body"].read()
 
 
+def delete_object(object_key: str) -> None:
+    _get_client().delete_object(Bucket=settings.R2_BUCKET, Key=object_key)
+
+
 def put_object_bytes(object_key: str, data: bytes, content_type: str) -> None:
     _get_client().put_object(
         Bucket=settings.R2_BUCKET, Key=object_key, Body=data, ContentType=content_type

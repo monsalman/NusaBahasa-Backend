@@ -59,6 +59,12 @@ class EntryCreate(BaseModel):
     type: EntryType = EntryType.kata
 
 
+class EntryUpdate(BaseModel):
+    text_daerah: str | None = None
+    text_indonesia: str | None = None
+    type: EntryType | None = None
+
+
 class EntryOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     id: int
